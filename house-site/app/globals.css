@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+    .dark-button {
+        @apply rounded-lg border-2 border-blue-800 text-blue-800 bg-transparent;
+    }
+    
+    .dark-button:hover {
+        @apply border-red-800 text-red-800;
+    }
+}
