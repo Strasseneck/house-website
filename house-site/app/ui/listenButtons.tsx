@@ -12,21 +12,21 @@ export default function ListenButtons() {
         <div className="flex flex-row justify-evenly w-[600px] mt-10">
             <a
                 target="_blank"
-                href="YOUR APPLE PODCASTS URL"
+                href="https://podcasts.apple.com/us/podcast/the-house-that-shadows-built/id1740729197"
                 className='flex items-center'
             >
                 <Image src={AppleLight} alt='Apple podcasts logo' className='mx-8' />
             </a>
             <a
                 target="_blank"
-                href="YOUR SPOTIFY URL"
+                href="https://open.spotify.com/show/13AmpupQwdaiylS4PuhtUc"
                 className='flex items-center'
             >
                 <Image src={SpotifyLight} alt='Spotify logo' className='mx-8' />
             </a>
             <a
                 target="_blank"
-                href="YOUR SPOTIFY URL"
+                href="https://music.amazon.de/podcasts/b530d239-08ba-4918-a3fb-b6a436cbd292/the-house-that-shadows-built"
                 className='flex items-center'
             >
                 <Image src={AmazonLight} alt='Amazon Music logo' className='mx-8' />
