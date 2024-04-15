@@ -8,7 +8,7 @@ import './page.css';
 export default function Page() {
   return (
     <div className="h-screen overflow-y-scroll pt-10">
-      <section id="hero" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
+      <section id="home" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
         <div id="image-logo-wrapper" className="flex relative bg-black">
           <Image src={bigimage} alt="abadoned-cinema" className="brightness-50 mb-24" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" style={{ left: '50%' }}>
@@ -22,7 +22,7 @@ export default function Page() {
             A six part fiction podcast with an original <span className="text-red-600"> soundtrack.</span>
           </p>
           <div className="flex justify-evenly">
-            <p className="text-white text-sm">Read & written by Joe Copplestone. Scored by <a target="_blank" href="https://www.alixlhoumeau.com/" className="hover:text-red-600 hover:cursor-pointer">Alix Lhoumeau.</a>
+            <p className="text-white text-sm">Written & read by Joe Copplestone. Scored by <a target="_blank" href="https://www.alixlhoumeau.com/" className="hover:text-red-600 hover:cursor-pointer">Alix Lhoumeau.</a>
             </p>
           </div>
           <div className="z-10 flex justify-evenly">
@@ -80,7 +80,7 @@ export default function Page() {
         <div className="relative z-10 w-full">
           <Player />
         </div>
-        <p className="absolute bottom-0 text-red-600">© 2024 The House That Shadows Built</p>
+        <p className="absolute bottom-0 text-red-600 font-bold">© 2024 The House That Shadows Built</p>
       </section>
     </div>
   );
