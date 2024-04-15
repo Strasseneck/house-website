@@ -10,8 +10,7 @@ export default function Nav() {
             <button className="dark-button w-[100px] h-[50px]">Read</button>
             <button className="dark-button w-[100px] h-[50px]"><a href={'#about'}>About</a></button>
             <div id="icons-container" className="flex flex-row">
-                <a href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-8 mx-5 cursor-pointer fill-blue-800 hover:fill-red-800" /></a>
-                <a href="https://open.spotify.com/show/13AmpupQwdaiylS4PuhtUc"><FaSpotify className="size-8 mx-5 cursor-pointer fill-blue-800 hover:fill-red-800" /></a>
+                <a href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-10 mx-5 cursor-pointer fill-blue-800 hover:fill-red-800" /></a>
             </div>
         </div>
     )

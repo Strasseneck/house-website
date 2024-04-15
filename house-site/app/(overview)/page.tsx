@@ -1,26 +1,28 @@
 import Player from "../ui/player";
+import ListenButtons from "../ui/listenButtons";
 import Image from "next/image";
 import logo from '../assets/logo.png';
 import bigimage from '../assets/bigimage.webp'
 import './page.css';
 
-
 export default function Page() {
   return (
     <div className="h-screen overflow-y-scroll pt-10">
-      <section className="h-screen w-full flex items-center justify-end text-2xl leading-loose p-4 bg-black relative">
-        <div className="flex flex-row relative">
-          <Image src={bigimage} alt="abadoned-cinema" className="brightness-50"></Image>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" style={{ left: '43%' }}>
-            <div className="w-1/3 mx-20">
-              <Image src={logo} alt="logo" />
+      <section className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
+        <div id="image-logo-wrapper" className="flex relative bg-black">
+          <Image src={bigimage} alt="abadoned-cinema" className="brightness-50 mb-24" />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" style={{ left: '50%' }}>
+            <div className="mx-16 flex flex-col">
+              <Image src={logo} alt="logo" className="z-20" />
             </div>
           </div>
-          <div className="w-1/3 flex flex-col mr-40 items-center justify-center p-8">
-            <p className="text-red-600 text-3xl">
-              A six part fiction podcast with an original soundtrack.
-            </p>
-            <button className="dark-button w-[250px] h-[70px]">Subscribe</button>
+        </div>
+        <div className="w-1/3 flex flex-col mr-40 items-center p-8 bg-black">
+          <p className="text-white text-2xl mb-10 w-full font-mono">
+            A six part fiction podcast with an original soundtrack.
+          </p>
+          <div className="z-10 flex justify-evenly">
+            <ListenButtons />
           </div>
         </div>
       </section>
