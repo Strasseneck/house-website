@@ -15,7 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return ( 
     <div className="flex flex-col h-screen w-screen">
       <Nav />
       <div>{children}</div>

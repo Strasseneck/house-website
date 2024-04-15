@@ -11,9 +11,9 @@ export default function Nav() {
             <a href={'#listen'} className="text-white hover:text-red-600 hover:underline underline-offset-8">LISTEN</a>
             <a href={'#episodes'} className="text-white hover:text-red-600 hover:underline underline-offset-8">READ</a>
             <div id="icons-container" className="flex flex-row">
-                <a href="mailto:thehousethatshadowsbuilt@gmail.com"><MdOutlineEmail className="size-8 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
-                <a href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-8 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
-                <a href="https://mastodon.social/@thehousethatshadowsbuilt"><FaMastodon className="size-8 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
+                <a target="_blank" href="mailto:thehousethatshadowsbuilt@gmail.com"><MdOutlineEmail className="size-6 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
+                <a target="_blank" href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-6 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
+                <a target="_blank " href="https://mastodon.social/@thehousethatshadowsbuilt"><FaMastodon className="size-6 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
             </div>
         </div>
     )

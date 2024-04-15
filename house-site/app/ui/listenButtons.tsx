@@ -1,11 +1,7 @@
 import Image from 'next/image';
-import Apple from '../assets/buttons/Apple.svg';
 import AppleLight from '../assets/buttons/Apple Podcasts.svg'
-import Spotify from '../assets/buttons/Spotify.svg';
-import Amazon from '../assets/buttons/Amazon.svg';
 import AmazonLight from '../assets/buttons/Amazon Music.svg'
 import SpotifyLight from '../assets/buttons/Spotify light.svg'
-import RSS from '../assets/buttons/RSS.svg';
 
 export default function ListenButtons() {
     return (
