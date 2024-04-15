@@ -17,10 +17,14 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="w-1/3 flex flex-col mr-40 items-center p-8 bg-black">
-          <p className="text-white text-2xl mb-10 w-full font-mono">
-            A six part fiction podcast with an original soundtrack.
+        <div className="w-1/2 flex flex-col mr-40 items-center p-8 bg-black">
+          <p className="text-white text-3xl mb-10 w-full font-mono">
+            A six part fiction podcast with an original <span className="text-red-600"> soundtrack.</span>
           </p>
+          <div className="flex justify-evenly">
+            <p className="text-white text-sm">Read & written by Joe Copplestone. Scored by <a target="_blank" href="https://www.alixlhoumeau.com/" className="hover:text-red-600 hover:cursor-pointer">Alix Lhoumeau.</a>
+            </p>
+          </div>
           <div className="z-10 flex justify-evenly">
             <ListenButtons />
           </div>
@@ -28,7 +32,7 @@ export default function Page() {
       </section>
       <section id="about" className="h-screen flex p-4 text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
-          <video src={'https://res.cloudinary.com/dl14zept9/video/upload/v1713003401/bgkino_gg3emj.mp4'} autoPlay muted className="absolute inset-0 w-full h-full object-cover -z-10" />
+          <video src={'https://res.cloudinary.com/dl14zept9/video/upload/v1713003401/bgkino_gg3emj.mp4'} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10" />
           <div className="w-2/5 mx-8">
             <strong className="text-red-600 text-3xl">
               In an a nameless city, a nameless narrator lives with their best friend ‘The Chewing Gum Kid’ on the very edge of modern society, squatting in deserted buildings and shoplifting for food.
@@ -39,9 +43,6 @@ export default function Page() {
               When the two of them discover and take over an abandoned cinema, we follow their transformation from scavenging outsiders to leaders of an underground counter culture movement but what starts as a radical experiment slowly descends into something much, much, darker...
             </strong>
           </div>
-        </div>
-        <div className="absolute bottom-2">
-          <strong className="text-white text-1xl"> Written and read by Joe Copplestone with a score by Alix Lhoumeau</strong>
         </div>
       </section>
       <section id="episodes" className="h-screen flex p-4 text-2xl leading-loose relative">

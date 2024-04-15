@@ -9,7 +9,7 @@ export default function Nav() {
             <a href={'#listen'} className="text-xl text-white hover:text-red-600 hover:underline underline-offset-8">LISTEN</a>
             <a href={'#episodes'} className="text-xl text-white hover:text-red-600 hover:underline underline-offset-8">READ</a>
             <div id="icons-container" className="flex flex-row">
-                <a href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-8 mx-5 mb-3 cursor-pointer fill-blue-800 hover:fill-red-800" /></a>
+                <a href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-8 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-800" /></a>
             </div>
         </div>
     )
