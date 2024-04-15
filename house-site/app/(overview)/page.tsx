@@ -40,33 +40,36 @@ export default function Page() {
             </strong>
           </div>
         </div>
+        <div className="absolute bottom-2">
+          <strong className="text-white text-1xl"> Written and read by Joe Copplestone with a score by Alix Lhoumeau</strong>
+        </div>
       </section>
       <section id="episodes" className="h-screen flex p-4 text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <video src={'https://res.cloudinary.com/dl14zept9/video/upload/v1713181397/bg1_ajersz.mp4'} autoPlay muted className="absolute inset-0 w-full h-full object-cover -z-10" />
-        <div className="w-2/5 mx-8 flex flex-col font-mono it">
-        <strong className="text-red-600 text-3xl font-sans mb-10  ">
-            Read Episode Transcripts.
-          </strong>
-          <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
-            Part One: Mausoleums of The Boom.
-          </strong>
-          <strong className="text-white hover:text-red-600 cursor-pointer text-2xl mb-5">
-            Part Two: The Fatman.
-          </strong>
-          <strong className="text-white hover:text-red-600 cursor-pointer text-2xl mb-5">
-            Part Three: Wall of Tapes.
-          </strong>
-          <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
-            Part Four: The Herd.
-          </strong>
-          <strong className="text-white hover:text-red-600 cursor-pointer text-2xl mb-5">
-            Part Five: The Fear Outside.
-          </strong>
-          <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
-            Part Six: A Slowly Unfolding Apocalypse
-          </strong>
-        </div>
+          <div className="w-2/5 mx-8 flex flex-col font-mono it">
+            <strong className="text-red-600 text-3xl mb-10 font-serif tracking-widest font-bold underline underline-offset-8">
+              READ
+            </strong>
+            <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
+              Part One: Mausoleums of The Boom.
+            </strong>
+            <strong className="text-white hover:text-red-600 cursor-pointer text-2xl mb-5">
+              Part Two: The Fatman.
+            </strong>
+            <strong className="text-white hover:text-red-600 cursor-pointer text-2xl mb-5">
+              Part Three: Wall of Tapes.
+            </strong>
+            <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
+              Part Four: The Herd.
+            </strong>
+            <strong className="text-white hover:text-red-600 cursor-pointer text-2xl mb-5">
+              Part Five: The Fear Outside.
+            </strong>
+            <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
+              Part Six: A Slowly Unfolding Apocalypse
+            </strong>
+          </div>
         </div>
       </section>
       <section id="listen" className="h-screen flex flex-col items-center justify-center relative">
