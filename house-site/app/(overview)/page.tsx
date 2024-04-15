@@ -13,19 +13,19 @@ export default function Page() {
     <div className="h-screen overflow-y-scroll pt-10">
       <section id="home" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
         <div id="image-logo-wrapper" className="flex relative bg-black">
-          <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24" />
+          <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24 min-w-[500px]" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" style={{ left: '50%' }}>
             <div className="mx-16 mb-24 flex flex-col">
-              <Image src={logo} alt="logo" className="z-20" />
+              <Image src={logo} alt="logo" className="z-20 min-w-[200px]" />
             </div>
           </div>
         </div>
         <div className="w-1/2 flex flex-col mr-40 items-center p-8 bg-black">
-          <p className="text-white text-3xl mb-10 w-full font-mono">
+          <p className="text-white text-3xl mb-10 w-full font-mono pl-10">
             A six part fiction podcast with an original <span className="text-red-600"> soundtrack.</span>
           </p>
           <div className="flex justify-evenly">
-            <p className="text-white text-sm">Written & read by Joe Copplestone. Scored by <a target="_blank" href="https://www.alixlhoumeau.com/" className="hover:text-red-600 hover:cursor-pointer">Alix Lhoumeau.</a>
+            <p className="text-white text-sm">Written & read by <a target="_blank" href="https://github.com/Strasseneck" className="hover:text-red-600 hover:cursor-pointer">Joe Copplestone.</a> Scored by <a target="_blank" href="https://www.alixlhoumeau.com/" className="hover:text-red-600 hover:cursor-pointer">Alix Lhoumeau.</a>
             </p>
           </div>
           <div className="z-10 flex justify-evenly">
