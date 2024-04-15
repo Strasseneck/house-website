@@ -1,8 +1,10 @@
+
 import Player from "../ui/player";
 import ListenButtons from "../ui/listenButtons";
 import Image from "next/image";
 import logo from '../assets/logo.png';
-import bigimage from '../assets/bigimage.webp'
+import kino1 from '../assets/kino1.webp';
+import kino2 from '../assets/kino2.webp';
 import RSS from '../assets/buttons/RSS.svg';
 import './page.css';
 
@@ -11,7 +13,7 @@ export default function Page() {
     <main className="h-screen overflow-y-scroll pt-10">
         <section id="home" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
           <div id="image-logo-wrapper" className="flex relative bg-black">
-            <Image src={bigimage} alt="abadoned-cinema" className="brightness-50 mb-24" />
+            <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" style={{ left: '50%' }}>
               <div className="mx-16 mb-24 flex flex-col">
                 <Image src={logo} alt="logo" className="z-20" />
@@ -49,7 +51,7 @@ export default function Page() {
         <section id="episodes" className="h-screen flex p-4 bg-black text-2xl leading-loose relative">
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-2/5 mx-8 flex flex-col font-mono it">
-              <strong className="text-red-600 text-3xl mb-10 font-serif tracking-widest font-bold underline underline-offset-8">
+              <strong className="text-red-600 text-3xl mb-10 font-serif tracking-widest underline underline-offset-8">
                 READ
               </strong>
               <strong className="text-white  hover:text-red-600 cursor-pointer text-2xl mb-5">
@@ -71,6 +73,7 @@ export default function Page() {
                 Part Six: A Slowly Unfolding Apocalypse
               </strong>
             </div>
+            <Image src={kino2} alt="abandoned cinema"/>
           </div>
         </section>
         <section id="listen" className="h-screen flex flex-col items-center justify-center relative">
