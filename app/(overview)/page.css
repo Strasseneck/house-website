@@ -1,0 +1,12 @@
+.text-section {
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image: radial-gradient(at 11% 87%, hsla(0, 0%, 0%, 1) 0px, transparent 50%),
+                      radial-gradient(at 58% 13%, hsla(0, 100%, 13%, 1) 0px, transparent 50%),
+                      radial-gradient(at 0% 50%, hsla(240, 100%, 9%, 1) 0px, transparent 50%),
+                      radial-gradient(at 26% 98%, hsla(0, 0%, 0%, 1) 0px, transparent 50%),
+                      radial-gradient(at 0% 70%, hsla(0, 100%, 13%, 1) 0px, transparent 50%),
+                      radial-gradient(at 67% 33%, hsla(240, 100%, 9%, 1) 0px, transparent 50%),
+                      radial-gradient(at 6% 5%, hsla(0, 0%, 0%, 1) 0px, transparent 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
