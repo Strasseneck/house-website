@@ -10,7 +10,7 @@ import './page.css';
 
 export default function Page() {
   return (
-    <main className="h-screen overflow-y-scroll pt-10">
+    <div className="h-screen overflow-y-scroll pt-10">
         <section id="home" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
           <div id="image-logo-wrapper" className="flex relative bg-black">
             <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24" />
@@ -50,7 +50,7 @@ export default function Page() {
         </section>
         <section id="episodes" className="h-screen flex p-4 bg-black text-2xl leading-loose relative">
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-2/5 mx-8 flex flex-col font-mono it">
+            <div className="w-2/5 mx-8 flex flex-col font-mono">
               <strong className="text-red-600 text-3xl mb-10 font-serif tracking-widest underline underline-offset-8">
                 READ
               </strong>
@@ -73,7 +73,7 @@ export default function Page() {
                 Part Six: A Slowly Unfolding Apocalypse
               </strong>
             </div>
-            <Image src={kino2} alt="abandoned cinema"/>
+            <Image src={kino2} alt="abandoned cinema" className="w-1/3"/>
           </div>
         </section>
         <section id="listen" className="h-screen flex flex-col items-center justify-center relative">
@@ -92,6 +92,6 @@ export default function Page() {
           </a>
           <p className="absolute bottom-0 text-red-600 font-bold">© 2024 The House That Shadows Built</p>
         </section>
-    </main>
+    </div>
   );
 }
