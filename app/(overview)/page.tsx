@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 // components
 import Player from "../ui/player";
 import ListenButtons from "../ui/listenButtons";
@@ -9,10 +10,13 @@ import kino2 from '../assets/kino2.webp';
 import RSS from '../assets/buttons/RSS.svg';
 import './page.css';
 // utils
-import useMobileRedirect from "../utils/mobileRedirect";
+import { isMobileDevice } from "../utils/isMobile";
 
-export default function Page() {
-  useMobileRedirect('www.thehousethatshadowsbuilt.com');
+export default async function Page() {
+  if (isMobileDevice()) {
+    redirect('https://www.buzzsprout.com/2319717/')
+  }
+
   return (
     <div className="h-screen overflow-y-scroll pt-10">
       <section id="home" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
