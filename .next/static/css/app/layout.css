@@ -927,6 +927,10 @@ body {
     margin-bottom: 6rem;
   }
 
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -969,6 +973,14 @@ body {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:text-2xl {
