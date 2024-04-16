@@ -1,14 +1,18 @@
-
+// components
 import Player from "../ui/player";
 import ListenButtons from "../ui/listenButtons";
 import Image from "next/image";
+// assets, styling
 import logo from '../assets/logo.png';
 import kino1 from '../assets/kino1.webp';
 import kino2 from '../assets/kino2.webp';
 import RSS from '../assets/buttons/RSS.svg';
 import './page.css';
+// utils
+import useMobileRedirect from "../utils/mobileRedirect";
 
 export default function Page() {
+  useMobileRedirect('www.thehousethatshadowsbuilt.com');
   return (
     <div className="h-screen overflow-y-scroll pt-10">
       <section id="home" className="h-screen w-full flex flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative">
