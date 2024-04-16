@@ -621,10 +621,6 @@ video {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -646,30 +642,31 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mr-2 {
-  margin-right: 0.5rem;
+.mt-20 {
+  margin-top: 5rem;
 }
-.mr-3 {
-  margin-right: 0.75rem;
+.mt-24 {
+  margin-top: 6rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
+}
+.size-12 {
+  width: 3rem;
+  height: 3rem;
 }
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
 }
-.size-8 {
-  width: 2rem;
-  height: 2rem;
-}
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-.size-12 {
-  width: 3rem;
-  height: 3rem;
+.h-\[100px\] {
+  height: 100px;
 }
 .h-\[60px\] {
   height: 60px;
@@ -682,24 +679,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[40px\] {
-  height: 40px;
-}
-.h-\[30px\] {
-  height: 30px;
-}
-.h-\[50px\] {
-  height: 50px;
-}
-.h-\[1000px\] {
-  height: 1000px;
-}
-.h-\[100px\] {
-  height: 100px;
-}
-.min-h-\[80px\] {
-  min-height: 80px;
 }
 .w-1\/2 {
   width: 50%;
@@ -786,6 +765,9 @@ video {
 .pl-10 {
   padding-left: 2.5rem;
 }
+.pl-\[20px\] {
+  padding-left: 20px;
+}
 .pl-\[30px\] {
   padding-left: 30px;
 }
@@ -795,8 +777,8 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
-.pl-\[20px\] {
-  padding-left: 20px;
+.text-center {
+  text-align: center;
 }
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -815,6 +797,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -852,10 +838,6 @@ video {
   cursor: pointer;
 }
 
-.hover\:fill-red-800:hover {
-  fill: #991b1b;
-}
-
 .hover\:fill-red-600:hover {
   fill: #dc2626;
 }
@@ -867,4 +849,69 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:text-blue-600 {
+    --tw-text-opacity: 1;
+    color: rgb(37 99 235 / var(--tw-text-opacity));
+  }
 }

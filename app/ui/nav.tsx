@@ -3,8 +3,11 @@
 import { FaInstagram, FaMastodon } from "react-icons/fa";
 import { MdOutlineEmail, MdOutlineMenu } from "react-icons/md";
 // utils
-import { isMobileDevice } from "../utils/isMobile";
 import { useState } from "react";
+
+const isMobileDevice = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+};
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
