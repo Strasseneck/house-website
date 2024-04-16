@@ -12,11 +12,11 @@ import './page.css';
 
 
 export default async function Page() {
-  
+
 
   return (
     <div className="h-screen overflow-y-scroll pt-10">
-      <section id="home" className="h-screen w-full flex flex-col md:flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative mt-16 md:mt-0">
+      <section id="home" className="h-screen w-full flex flex-col md:flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative mt-12 md:mt-0">
         <div id="image-logo-wrapper" className="flex relative bg-black">
           <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24 min-w-[500px]" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" style={{ left: '50%' }}>
@@ -25,8 +25,8 @@ export default async function Page() {
             </div>
           </div>
         </div>
-        <div className="w-1/3 md:w-1/2 flex flex-col mr-40 items-center md:p-8 bg-black">
-          <p className="text-white text-xl md:text-3xl mb-10 w-full font-mono pl-10">
+        <div className="w-1/3 md:w-1/2 flex flex-col mr-40 md:items-center md:p-8 bg-black">
+          <p className="text-white text-xl md:text-3xl mb-10 w-[250px] md:w-full font-mono pl-10">
             A six part fiction podcast with an original <span className="text-red-600"> soundtrack.</span>
           </p>
           <div className="flex justify-evenly">
@@ -41,15 +41,17 @@ export default async function Page() {
       <section id="about" className="h-screen flex p-4 text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <video src={'https://res.cloudinary.com/dl14zept9/video/upload/v1713003401/bgkino_gg3emj.mp4'} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10" />
-          <div className="w-2/5 mx-8">
-            <strong className="text-red-600 text-3xl">
-              In an a nameless city, a nameless narrator lives with their best friend ‘The Chewing Gum Kid’ on the very edge of modern society, squatting in deserted buildings and shoplifting for food.
-            </strong>
-          </div>
-          <div className="w-2/5 mx-8">
-            <strong className="text-red-600 text-2xl">
-              When the two of them discover and take over an abandoned cinema, we follow their transformation from scavenging outsiders to leaders of an underground counter culture movement but what starts as a radical experiment slowly descends into something much, much, darker...
-            </strong>
+          <div id="text container" className="flex flex-col md:flex-row p-4">
+            <div className="w-4/5 md:w-2/5 mx-8">
+              <strong className="text-red-600 text-l md:text-3xl">
+                In an a nameless city, a nameless narrator lives with their best friend ‘The Chewing Gum Kid’ on the very edge of modern society, squatting in deserted buildings and shoplifting for food.
+              </strong>
+            </div>
+            <div className="w-1/2 md:w-2/5 mx-8">
+              <strong className="text-red-600 text-sm md:text-2xl hidden md:block">
+                When the two of them discover and take over an abandoned cinema, we follow their transformation from scavenging outsiders to leaders of an underground counter culture movement but what starts as a radical experiment slowly descends into something much, much, darker...
+              </strong>
+            </div>
           </div>
         </div>
       </section>
@@ -78,7 +80,7 @@ export default async function Page() {
               <a href="/data/transcripts/Part Six: A Slowly Unfolding Apocalypse.pdf" download="Part Six: A Slowly Unfolding Apocalypse.pdf">Part Six: A Slowly Unfolding Apocalypse</a>
             </strong>
           </div>
-          <Image src={kino2} alt="abandoned cinema" className="w-1/3" />
+          <Image src={kino2} alt="abandoned cinema" className="w-1/3 hidden md:block" />
         </div>
       </section>
       <section id="listen" className="h-screen flex flex-col items-center justify-center relative">
