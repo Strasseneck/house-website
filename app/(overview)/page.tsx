@@ -9,13 +9,10 @@ import kino1 from '../assets/kino1.webp';
 import kino2 from '../assets/kino2.webp';
 import RSS from '../assets/buttons/RSS.svg';
 import './page.css';
-// utils
-import { isMobileDevice } from "../utils/isMobile";
+
 
 export default async function Page() {
-  if (isMobileDevice()) {
-    redirect('https://www.buzzsprout.com/2319717/')
-  }
+  
 
   return (
     <div className="h-screen overflow-y-scroll pt-10">

@@ -621,6 +621,10 @@ video {
   margin-left: 2rem;
   margin-right: 2rem;
 }
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -642,12 +646,30 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
 .flex {
   display: flex;
 }
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
+}
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.size-12 {
+  width: 3rem;
+  height: 3rem;
 }
 .h-\[60px\] {
   height: 60px;
@@ -660,6 +682,24 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[40px\] {
+  height: 40px;
+}
+.h-\[30px\] {
+  height: 30px;
+}
+.h-\[50px\] {
+  height: 50px;
+}
+.h-\[1000px\] {
+  height: 1000px;
+}
+.h-\[100px\] {
+  height: 100px;
+}
+.min-h-\[80px\] {
+  min-height: 80px;
 }
 .w-1\/2 {
   width: 50%;
@@ -755,6 +795,9 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
+.pl-\[20px\] {
+  padding-left: 20px;
+}
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -772,6 +815,10 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold {
   font-weight: 700;
@@ -807,6 +854,10 @@ video {
 
 .hover\:fill-red-800:hover {
   fill: #991b1b;
+}
+
+.hover\:fill-red-600:hover {
+  fill: #dc2626;
 }
 
 .hover\:text-red-600:hover {
