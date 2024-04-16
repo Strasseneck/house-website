@@ -669,21 +669,6 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mt-20 {
-  margin-top: 5rem;
-}
-.mt-24 {
-  margin-top: 6rem;
-}
-.mt-16 {
-  margin-top: 4rem;
-}
-.mt-12 {
-  margin-top: 3rem;
-}
-.mb-12 {
-  margin-bottom: 3rem;
-}
 .flex {
   display: flex;
 }
@@ -722,8 +707,14 @@ video {
 .w-2\/5 {
   width: 40%;
 }
+.w-4\/5 {
+  width: 80%;
+}
 .w-5\/6 {
   width: 83.333333%;
+}
+.w-\[250px\] {
+  width: 250px;
 }
 .w-\[600px\] {
   width: 600px;
@@ -731,26 +722,14 @@ video {
 .w-full {
   width: 100%;
 }
-.w-1\/5 {
-  width: 20%;
-}
-.w-\[200px\] {
-  width: 200px;
-}
-.w-\[250px\] {
-  width: 250px;
-}
-.w-4\/5 {
-  width: 80%;
-}
-.w-\[150px\] {
-  width: 150px;
-}
 .min-w-\[200px\] {
   min-width: 200px;
 }
 .min-w-\[500px\] {
   min-width: 500px;
+}
+.min-w-full {
+  min-width: 100%;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -801,11 +780,11 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .p-4 {
   padding: 1rem;
-}
-.p-8 {
-  padding: 2rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -825,8 +804,38 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
-.text-center {
-  text-align: center;
+.pt-\[80px\] {
+  padding-top: 80px;
+}
+.pt-\[180px\] {
+  padding-top: 180px;
+}
+.pt-\[200px\] {
+  padding-top: 200px;
+}
+.pt-\[220px\] {
+  padding-top: 220px;
+}
+.pt-\[250px\] {
+  padding-top: 250px;
+}
+.pt-\[260px\] {
+  padding-top: 260px;
+}
+.pl-20 {
+  padding-left: 5rem;
+}
+.pl-14 {
+  padding-left: 3.5rem;
+}
+.pl-12 {
+  padding-left: 3rem;
+}
+.pt-\[280px\] {
+  padding-top: 280px;
+}
+.pt-\[300px\] {
+  padding-top: 300px;
 }
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -838,9 +847,9 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -849,10 +858,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 .font-bold {
   font-weight: 700;
@@ -882,74 +887,68 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+body {
+    background-color: black;
+}
+
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
 
+
 .hover\:fill-red-600:hover {
   fill: #dc2626;
 }
+
 
 .hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
 
-@media (min-width: 640px) {
-
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:w-full {
-    width: 100%;
-  }
-}
 
 @media (min-width: 768px) {
 
-  .md\:mr-40 {
-    margin-right: 10rem;
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
   }
 
-  .md\:block {
-    display: block;
+  .md\:mb-24 {
+    margin-bottom: 6rem;
   }
 
-  .md\:hidden {
-    display: none;
+  .md\:block {
+    display: block;
   }
 
   .md\:w-1\/2 {
     width: 50%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-\[600px\] {
-    width: 600px;
-  }
-
   .md\:w-2\/5 {
     width: 40%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-center {
@@ -960,6 +959,23 @@ video {
     padding: 2rem;
   }
 
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -968,15 +984,5 @@ video {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-blue-600 {
-    --tw-text-opacity: 1;
-    color: rgb(37 99 235 / var(--tw-text-opacity));
   }
 }
