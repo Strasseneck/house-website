@@ -15,7 +15,7 @@ export default async function Page() {
 
 
   return (
-    <div className="h-screen overflow-y-scroll pt-[300px] md:pt-20 ">
+    <div className="h-screen overflow-y-scroll pt-96 md:pt-20 ">
       <section id="home" className="h-screen w-full flex flex-col md:flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative ">
         <div id="image-logo-wrapper" className="flex relative bg-black">
           <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24 min-w-[500px]" />

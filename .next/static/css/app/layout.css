@@ -837,6 +837,9 @@ video {
 .pt-\[300px\] {
   padding-top: 300px;
 }
+.pt-96 {
+  padding-top: 24rem;
+}
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
