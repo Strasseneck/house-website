@@ -95,7 +95,7 @@ export default async function Page() {
             <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part Three: Wall of Tapes.pdf" download="Part Three: Wall of Tapes.pdf">Part Three: Wall of Tapes</a>
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-basemd:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part Four: The Herd.pdf" download="Part Four: The Herd.pdf">Part Four: The Herd</a>
             </strong>
             <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
