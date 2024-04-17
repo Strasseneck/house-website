@@ -82,7 +82,7 @@ export default async function Page() {
       <Image src={kino2} alt="abandoned cinema" className="md:hidden" />
       <section id="episodes" className="h-screen flex p-4 bg-black text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-2/5 mx-8 flex flex-col font-mono">
+          <div className="w-3/5 md:w-2/5 mx-8 flex flex-col font-mono">
             <strong className="text-red-600 text-2xl md:text-3xl mb-10 font-serif tracking-widest underline underline-offset-8">
               READ
             </strong>

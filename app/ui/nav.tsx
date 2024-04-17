@@ -37,11 +37,11 @@ export default function Nav() {
                     {menuOpen ? (
                         <>
                             <div className="flex flex-row">
-                                <a href={'#about'} className="text-s text-white hover:text-red-600 hover:underline underline-offset-8 mx-5 mb-3 ">ABOUT</a>
-                                <a href={'#listen'} className="text-s text-white hover:text-red-600 hover:underline underline-offset-8 mx-5 mb-3 ">LISTEN</a>
-                                <a href={'#episodes'} className="text-s text-white hover:text-red-600 hover:underline underline-offset-8 mx-5 mb-3 ">READ</a>
+                                <a href={'#about'} className="text-xs text-white hover:text-red-600 hover:underline underline-offset-8 mx-5 mb-3 ">ABOUT</a>
+                                <a href={'#listen'} className="text-xs text-white hover:text-red-600 hover:underline underline-offset-8 mx-5 mb-3 ">LISTEN</a>
+                                <a href={'#episodes'} className="text-xs text-white hover:text-red-600 hover:underline underline-offset-8 mx-5 mb-3 ">READ</a>
                             </div>
-                            <MdOutlineMenu className="size-12 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" onClick={handleMenuClick} />
+                            <MdOutlineMenu className="size-8 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" onClick={handleMenuClick} />
                         </>
                     ) : (
                         <>
