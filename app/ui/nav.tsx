@@ -2,8 +2,11 @@
 // icons
 import { FaInstagram, FaMastodon } from "react-icons/fa";
 import { MdOutlineEmail, MdOutlineMenu } from "react-icons/md";
+import logo from '../assets/logosm.png';
+
 // utils
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const isMobileDevice = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -19,7 +22,7 @@ export default function Nav() {
         }
     }, [])
 
-    
+
     const handleMenuClick = () => {
         if (menuOpen) {
             setMenuOpen(false)
@@ -42,7 +45,7 @@ export default function Nav() {
                         </>
                     ) : (
                         <>
-                            <a href="#home"><video src={"https://res.cloudinary.com/dl14zept9/video/upload/v1713180271/Glitch_Logo_Animation_transparent_as8gjp.mp4"} autoPlay loop muted className="h-[80px] mb-2" />
+                            <a href="#home"><Image src={logo} alt="logo" className="size-10 mb-2" />
                             </a>
                             <div id="icons-container" className="flex flex-row">
                                 <a target="_blank" href="mailto:thehousethatshadowsbuilt@gmail.com"><MdOutlineEmail className="size-6 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" /></a>
@@ -55,7 +58,7 @@ export default function Nav() {
                 </div>
             ) : (
                 <div className="w-full h-[80px] flex flex-row position: fixed top-0 bg-black items-center justify-between pl-[30px] pt-8 pb-6 z-40 font-serif tracking-widest">
-                    <a href="#home"><video src={"https://res.cloudinary.com/dl14zept9/video/upload/v1713180271/Glitch_Logo_Animation_transparent_as8gjp.mp4"} autoPlay loop muted className="h-[60px] mb-2" />
+                    <a href="#home"><Image src={logo} alt="logo" className=" size-10 mb-2" />
                     </a>
                     <a href={'#about'} className="text-white hover:text-red-600 hover:underline underline-offset-8">ABOUT</a>
                     <a href={'#listen'} className="text-white hover:text-red-600 hover:underline underline-offset-8">LISTEN</a>

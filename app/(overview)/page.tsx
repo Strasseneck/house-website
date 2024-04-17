@@ -40,7 +40,7 @@ export default async function Page() {
       </section>
       <section id="about" className="h-screen flex p-4 text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
-          <video src={'https://res.cloudinary.com/dl14zept9/video/upload/v1713003401/bgkino_gg3emj.mp4'} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10" />
+          <video src={'https://res.cloudinary.com/dvxnerwho/video/upload/v1713346069/cinemabg_jkfsto.mp4'} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover -z-10" />
           <div id="text container" className="flex flex-col md:flex-row p-10">
             <div className="w-4/5 md:w-2/5 mx-8">
               <strong className="text-red-600 text-xl md:text-3xl">
@@ -85,7 +85,7 @@ export default async function Page() {
       </section>
       <section id="listen" className="h-screen flex flex-col items-center justify-center relative">
         <div className="absolute inset-0 ">
-          <video src={'https://res.cloudinary.com/dl14zept9/video/upload/v1713003417/bgglitch_fflkoh.mp4'} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover" disablePictureInPicture />
+          <video src={'https://res.cloudinary.com/dvxnerwho/video/upload/v1713344247/glitchbg_excx66.mp4'} autoPlay muted loop className="absolute inset-0 w-full h-full object-cover" disablePictureInPicture />
         </div>
         <div className="relative z-10 w-full">
           <Player />
