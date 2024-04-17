@@ -86,22 +86,22 @@ export default async function Page() {
             <strong className="text-red-600 text-2xl md:text-3xl mb-10 font-serif tracking-widest underline underline-offset-8">
               READ
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-xl md:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part One: Mausoleums of The Boom.pdf" download="Part One: Mausoleums of The Boom.pdf">Part One: Mausoleums of The Boom</a>
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-xl md:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part Two: The Fatman.pdf" download="Part Two: The Fatman.pdf">Part Two: The Fatman</a>
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-xl md:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part Three: Wall of Tapes.pdf" download="Part Three: Wall of Tapes.pdf">Part Three: Wall of Tapes</a>
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-xl md:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-basemd:text-2xl mb-5">
               <a href="/data/transcripts/Part Four: The Herd.pdf" download="Part Four: The Herd.pdf">Part Four: The Herd</a>
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-xl md:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part Five: The Fear Outside.pdf" download="Part Five: The Fear Outside.pdf">Part Five: The Fear Outside</a>
             </strong>
-            <strong className="text-white hover:text-red-600 cursor-pointer text-xl md:text-2xl mb-5">
+            <strong className="text-white hover:text-red-600 cursor-pointer text-base md:text-2xl mb-5">
               <a href="/data/transcripts/Part Six: A Slowly Unfolding Apocalypse.pdf" download="Part Six: A Slowly Unfolding Apocalypse.pdf">Part Six: A Slowly Unfolding Apocalypse</a>
             </strong>
           </div>
