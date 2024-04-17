@@ -47,7 +47,7 @@ export default async function Page() {
       <div id="btns-mobile" className="md:hidden pl-24">
         <ListenButtons />
       </div>
-      <section id="about" className="h-screen flex p-1 text-2xl leading-loose relative">
+      <section id="about" className="h-screen flex md:p-1 text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <Image src={kino3} alt="cinema-background" className="absolute inset-0 w-full h-full object-cover -z-10 hidden md:block" />
           <div id="text container" className="flex flex-col md:flex-row p-10 md:pl-28">

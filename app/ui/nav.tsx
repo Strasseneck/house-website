@@ -52,7 +52,7 @@ export default function Nav() {
                                 <a target="_blank" href="https://www.instagram.com/thehousethatshadowsbuilt/"><FaInstagram className="size-6 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" /></a>
                                 <a target="_blank " href="https://mastodon.social/@thehousethatshadowsbuilt"><FaMastodon className="size-6 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" /></a>
                             </div>
-                            <MdOutlineMenu className="size-12 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" onClick={handleMenuClick} />
+                            <MdOutlineMenu className="size-8 mx-5 mb-3 cursor-pointer fill-white hover:fill-red-600" onClick={handleMenuClick} />
                         </>
                     )}
                 </div>
