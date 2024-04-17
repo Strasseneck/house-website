@@ -15,7 +15,7 @@ import './page.css';
 
 export default async function Page() {
   return (
-    <div className="h-screen overflow-x-hidden overflow-y-scroll pt-[300px] md:pt-20 ">
+    <div className="h-screen overflow-x-hidden overflow-y-scroll pt-[100px] md:pt-20 ">
       <section id="home" className="h-screen w-full flex flex-col md:flex-row items-center justify-end text-2xl leading-loose p-4 bg-black relative ">
         <div id="image-logo-wrapper" className="flex relative bg-black">
           <Image src={kino1} alt="abadoned-cinema" className="brightness-50 mb-24 min-w-[400px]" />
@@ -26,32 +26,34 @@ export default async function Page() {
           </div>
         </div>
         <div className="w-1/3 md:w-1/2 flex-col mr-40 md:items-center md:p-8 bg-black">
-          <p className="text-white text-base md:text-3xl mb-10 w-[250px] md:w-full font-mono pl-12 md:pl-10">
+          <p className="text-white text-base md:text-3xl mb-10 w-[250px] md:w-full font-mono pl-12 md:pl-16">
             A six part fiction podcast with an original <span className="text-red-600"> soundtrack.</span>
           </p>
-          <div id="mobile-credits" className="text-white text-xs pl-20 w-[250px]">
+          <div id="mobile-credits" className="text-white text-xs pl-20 w-[250px] md:hidden">
             <p className="mb-2">Written & Read:</p>
             <p className="mb-2">Joe Copplestone </p>
             <p className="mb-2">Soundtrack by</p>
             <p className="mb-2"> Alix Lhoumeau.</p>
           </div>
-          <div className="md:hidden pl-12">
-            <ListenButtons />
-          </div>
-          <div id="credits" className="flex-row md:flex-col pl-14 md:pl-0 hidden md:flex">
+          <div id="credits" className="flex-col pl-16 hidden md:flex">
             <p className="text-white text-base md:text-sm">Written & Read by <a target="_blank" href="https://github.com/Strasseneck" className="hover:text-red-600 hover:cursor-pointer">Joe Copplestone.</a> Soundtrack by <a target="_blank" href="https://www.alixlhoumeau.com/" className="hover:text-red-600 hover:cursor-pointer">Alix Lhoumeau.</a>
             </p>
           </div>
-          <div className="pl-10 hidden md:block">
+          <div className="pl-8 hidden md:block">
             <ListenButtons />
           </div>
         </div>
-
       </section>
-      <section id="about" className="h-screen flex p-4 text-2xl leading-loose relative">
+      <div id="btns-mobile" className="md:hidden pl-24">
+        <ListenButtons />
+      </div>
+      <section id="about" className="h-screen flex p-1 text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <Image src={kino3} alt="cinema-background" className="absolute inset-0 w-full h-full object-cover -z-10 hidden md:block" />
-          <div id="text container" className="flex flex-col md:flex-row p-10">
+          <div id="text container" className="flex flex-col md:flex-row p-10 md:pl-28">
+          <strong className="text-red-600 text-2xl mb-10 font-serif tracking-widest underline underline-offset-8 pl-16 md:hidden">
+              ABOUT
+            </strong>
             <div className="w-4/5 md:w-2/5 mx-8">
               <strong className="text-red-600 text-base md:text-3xl">
                 In an a nameless city, a nameless narrator lives with their best friend ‘The Chewing Gum Kid’ on the very edge of modern society, squatting in deserted buildings and shoplifting for food.
@@ -65,15 +67,19 @@ export default async function Page() {
           </div>
         </div>
       </section>
+      <div className="relative h-80 md:hidden">
+        <Image src={kino3} alt="cinema-background" className="h-2/3"/>
+      </div>
       <section id="about-2" className="h-screen flex p-4 text-2xl leading-loose relative md:hidden">
-        <div className="w-1/2 md:w-2/5 mx-8">
+        <div className="w-4/5 mx-8 p-10 md:pl-28">
           <strong className="text-red-600 text-base">
-            When the two of them take over an abandoned cinema, we follow their transformation from scavenging outsiders to leaders of an underground counter culture movement...
+            When the two of them take over an abandoned cinema, we follow their transformation from scavenging outsiders to leaders of an underground counter culture movement 
           </strong>
           <strong className="text-red-600 text-base">but what starts as a radical experiment slowly descends into something much, much, darker...
           </strong>
         </div>
       </section>
+      <Image src={kino2} alt="abandoned cinema" className="md:hidden" />
       <section id="episodes" className="h-screen flex p-4 bg-black text-2xl leading-loose relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-2/5 mx-8 flex flex-col font-mono">
