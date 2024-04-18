@@ -1,3 +1,15 @@
-A website for a fiction podcast project. Super quick and simple, built with React / Next / Typescript styled with Tailwind for Web and Mobile.
+# The House That Shadows Built Website
 
-[Website](https://www.thehousethatshadowsbuilt.com/)
+A website for a fiction podcast project. 
+
+# Preview
+
+![Gif demo](readmeAssets/gif1.gif)
+
+# Stack
+React
+Next.js
+Tailwind
+Deployed with Vercel
+
+
