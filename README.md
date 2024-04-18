@@ -7,9 +7,6 @@ A website for a fiction podcast project.
 ![Gif demo](readmeAssets/gif1.gif)
 
 # Stack
-React
-Next.js
-Tailwind
-Deployed with Vercel
+React / Next / Tailwind / Vercel 
 
 
